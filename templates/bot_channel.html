@@ -1,0 +1,179 @@
+<!-------
+Copyright (C) 2020  Aditya Kakde
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>.
+---------------->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>IP-bot3</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bot.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://www.embedcurl.com/embedcurl.min.js" async></script>
+</head>
+<body style="background-image:url('https://cdn.notonthehighstreet.com/fs/6a/a2/2117-95d1-4c26-b2a6-aef60923cb39/original_handmade-reclaimed-wooden-pizza-board-with-handle.jpg'); background-size:100%;">
+
+<div id="mySidenav" class="sidenav">
+	<div class="w3-bar w3-blue" style="margin-top:-60px;">
+		<div class="w3-bar-item">
+			<img src="https://steembottracker.com/img/bot_logo.png" class="img-responsive" style="border-radius:100px; width:36px; height:36px; background-color:white; margin-top:7px;">
+		</div>
+		<div class="w3-bar-item">
+			<p style="margin-left:-20px; margin-top:5px;">Master Bot</p>
+			<p style="margin-left:-20px; margin-top:-8px;"><small style="color:white;">Online</small></p>
+		</div>
+		<div class="w3-bar-item" style="height:36px; width:36px; margin-left:140px;">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="color:white; text-decoration:none;">&times;</a>
+		</div>
+	</div>
+	<div class="w3-bar">
+		<div class="w3-bar-item">
+			<img src="https://steembottracker.com/img/bot_logo.png" class="img-responsive w3-border" style="border-radius:100px; width:40px; height:40px; background-color:white; margin-top:50px; margin-left:-2px;">
+		</div>
+		<div class="w3-bar-item">
+			<p class="w3-border w3-padding" style="margin-left:-24px; margin-top:50px; border-radius:5px;">Hello user</p>
+		</div>
+	</div>
+	<div class="w3-bar">
+		<div class="w3-bar-item">
+			<p class="w3-border w3-padding" style="margin-left:45px; margin-top:50px; border-radius:5px; width:250px; margin-top:-8px;">I'm Master Bot and governs all the working of our business and here you will surely find some delicious pizzas</p>
+		</div>
+	</div>
+	<div class="w3-bar">
+		<div class="w3-bar-item">
+			<p class="w3-border w3-padding" style="margin-left:45px; margin-top:50px; border-radius:5px; width:250px; margin-top:-8px;">Please choose any one bot to answer your query</p>
+		</div>
+	</div>
+	<div class="w3-bar">
+		<div class="w3-bar-item">
+			<p class="w3-border w3-padding" style="margin-left:45px; margin-top:50px; border-radius:5px; width:250px; margin-top:-8px; background-color:#f2f2f2;">
+				
+				<!----
+				<script> 
+					function myFunction() { 
+						var x = document.getElementsByTagName("SCRIPT")[0]; 
+						x.getAttributeNode("src").value = "bot2.js"; 
+					} 
+				</script>
+				
+				<button type="submit" class="btn btn-primary" id="advanced-pizza-bot">Order Pizza</button>
+				<script src="bot1.js"></script>
+				
+				<button type="submit" class="btn btn-primary" id="analytic-bot" onclick="myFunction()">Faq</button>
+				
+				--->
+				
+				<button type="submit" class="btn btn-primary" id="button1">Order Pizza</button></a>
+				<button type="submit" class="btn btn-primary" id="button2">Faq</button>
+				
+			</p>
+		</div>
+	</div>
+</div>
+
+<div class="w3-display-container">
+	<span onclick="openNav()"><div class="w3-display-bottomright" style="position:fixed; padding:20px; z-index:0.5;"><img src="https://cdn3.f-cdn.com/contestentries/1464599/11468462/5c3a1af1418ff_thumbCard.jpg" class="img-responsive w3-border" style="width:90px; height:90px; color:white; border-radius:50px; box-shadow: 2px 2px rgba(0,0,0,0.5); cursor:pointer;"></div></span>
+</div>
+
+<!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+<div id="main">
+	<div class="w3-bar" style="background-color:rgba(0,0,0,0.7);">
+		<div class="w3-bar-item" style="padding:20px; transition:0.8s; font-size:40px; color:orange;"><b>INDIAN PIZZA</b></div>
+		<div class="w3-right">
+			<div class="w3-bar-item w3-button w3-hover-orange" style="padding:40px; transition:0.8s; color:white;"><b>Home</b></div>
+			<div class="w3-bar-item w3-button w3-hover-orange" style="padding:40px; transition:0.8s; color:white;"><b>Service</b></div>
+			<div class="w3-bar-item w3-button w3-hover-orange" style="padding:40px; transition:0.8s; color:white;"><b>Blog</b></div>
+			<div class="w3-bar-item w3-button w3-hover-orange" style="padding:40px; transition:0.8s; color:white;"><b>About</b></div>
+		</div>
+	</div>
+	<div class="container" style="margin-top:200px;">
+		<center>
+			<h3 style="color:orange;"><b>Welcome</b></h3>
+			<h2 class="w3-responsive" style="color:white; font-size:60px; width:900px;"><b>WE COOKED YOUR DESIRED PIZZA RECIPE</b></h2>
+			<br>
+			<h4 style="color:white; width:700px;"><b>A small river named Duden flows by their place and supplies it with the necessary regelialia.</b></h4>
+			<br>
+			<button type="button" id="button" class="btn btn-default w3-hover-yellow w3-hover-border-yellow" style="background-color:rgba(0,0,0,0); color:white; padding:20px; border-radius:4px; border:2px solid white; transition:0.6s;"><b>Order Now</b></button>
+			<button type="button" id="button" class="btn btn-default w3-hover-yellow w3-hover-border-yellow" style="background-color:rgba(0,0,0,0); color:white; padding:20px; border-radius:4px; border:2px solid white; transition:0.6s;"><b>View Menu</b></button>
+		</center>
+	</div>
+</div>
+
+
+<script>
+
+/* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
+function openNav() {
+  document.getElementById("mySidenav").style.width = "360px";
+  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+/* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.body.style.backgroundColor = "white";
+}
+
+</script>
+
+<script src="http://localhost:3000/assets/modules/channel-web/inject.js"></script>
+<script src="http://localhost:3000/assets/modules/channel-web/injectdemo.js"></script>
+
+<script>
+
+var button1 = document.getElementById("button1")
+var button2 = document.getElementById("button2")
+
+if(button1){
+      window.botpressWebChat.init({
+        host: 'http://localhost:3000',
+        botId: 'advanced-pizza-bot',
+		hideWidget: true
+      })
+    } else if (button2){
+      window.botpressWebChatdemo.demo({
+        host: 'http://localhost:3000',
+        botId: 'faq2',
+		hideWidget: true
+      })
+    }
+
+$(button1).click(function(){
+		window.botpressWebChat.sendEvent({ type: 'show' });
+}); 
+$(button2).click(function(){
+		window.botpressWebChatdemo.sendDemo({ type: 'show' });
+});
+
+</script>
+
+
+
+
+<script>
+
+window.addEventListener('message', message => {
+  if (message.data.userId) {
+    console.log(`The User ID is ` + message.data.userId)
+  }
+})
+
+</script>
+
+</body>
+</html>

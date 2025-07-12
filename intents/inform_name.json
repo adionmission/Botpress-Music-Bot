@@ -1,0 +1,22 @@
+{
+  "name": "inform_name",
+  "utterances": [
+    "my name [aditya](name)",
+    "[aditya](name)",
+    "[aditya](name) is my name",
+    "my name is [aditya](name)"
+  ],
+  "slots": [
+    {
+      "id": "p_uUskCGDaz6AoF3Pdurn",
+      "name": "name",
+      "entities": [
+        "name"
+      ],
+      "color": 1
+    }
+  ],
+  "contexts": [
+    "global"
+  ]
+}

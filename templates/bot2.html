@@ -1,0 +1,176 @@
+<!-------
+Copyright (C) 2020  Aditya Kakde
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>.
+---------------->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>IP-bot2</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<div class="jumbotron", style="background-color:#57A0D3;">
+	<div class="container">
+		<center><h1 style="color:white;"><b>Welcome to Indian Pizza</b></h1></center>
+	</div>
+</div>
+
+<div class="w3-bar w3-light-grey", style="padding:none; margin-top:-30px;">
+	<div class="container">
+		<a href="botdeploy.html"><div class="w3-bar-item w3-button w3-mobile" style="padding:20px; font-size:15px; transition:0.7s;"><span class="glyphicon glyphicon-home"></span> Home</div></a>
+		<a href="about.html"><div class="w3-bar-item w3-button w3-mobile" style="padding:20px; font-size:15px; transition:0.7s;"><span class="glyphicon glyphicon-user"></span> About</div></a>
+	</div>
+</div>
+
+<div class="jumbotron", style="background-color:#57A0D3;">
+	<div class="container">
+		<div class="col-sm-8">
+			<h2 style="color:white;"><b>Special Offer Of The Month</b></h2>
+			<h4><small style="color:white;">Avail Indian Pizza Everyday Value Offers and get 2 Regular Pizzas starting at Rs.99 each or get 2 Medium Pizzas starting at Rs.199 each. View all the Everyday Value Offers & Pizza Deals below. T & C apply.</small></h4>
+		</div>
+		<div class="col-sm-4">
+			<h2><center><button type="button" class="btn btn-danger" style="transition:0.5s; margin-top:25px;">Read More <span class="glyphicon glyphicon-arrow-right"></span></button></center></h2>
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	<div class="jumbotron">
+		<h2><b>About Chatbot 2</b></h2>
+		<div class="w3-border-bottom" style="width:500px;"></div>
+		<br>
+		<p>This chat bot is based on intents and entities. Its just that you need to type the messages.</p>
+		<p>Click on the inform button present in the bottom left corner of your screen.</p>
+	</div>
+</div>
+
+<div class="jumbotron">
+	<div class="container">
+		<div class="col-sm-6">
+		</div>
+		<div class="col-sm-6">
+			<h2 style="font-size:50px;"><b>Unlock Exclusive Offers</b></h2>
+			<br>
+			<h4><b>For lightning fast order experience download the Indian Pizza app<b></h4>
+			<br>
+			<button type="button" class="btn btn-primary" style="transition:0.5s; font-size:20px; padding:20px;">Download <span class="glyphicon glyphicon-download"></span></button> 
+		</div>
+	</div>
+</div>
+<div class="jumbotron" style="background-color:#57A0D3; margin-top:-30px;">
+	<div class="container">
+		
+		<div class="col-sm-3">
+			<h3 style="color:#4682B4;"><b>Company</b></h3>
+			<br>
+			<span style="color:white;">
+			<p>Blog</p>
+			<p>Inventor</p>
+			<p>Feedback</p>
+			<p>Ads</p>
+			</span>
+		</div>
+		<div class="col-sm-3">
+			<h3 style="color:#4682B4;"><b>About</b></h3>
+			<br>
+			<span style="color:white;">
+			<p>Gift Card</p>
+			<p>Card Balance Enquiry</p>
+			<p>FAQ</p>
+			</span>
+		</div>
+		<div class="col-sm-6">
+			<h3 style="color:#4682B4;"><b>Social Media</b></h3>
+			<br>
+			<p><span class="fa fa-twitter" style="background-color:white; padding:20px; border-radius:200px;"></span></p>
+		</div>
+	</div>
+</div>
+<center>
+	<h4 style="padding:10px;">All Rights Reserved &copy; 2019</h4>
+</center>
+
+
+
+
+<script src="http://localhost:3000/assets/modules/channel-web/inject.js"></script>
+
+<!----------
+<script>
+  window.botpressWebChat.init({ host: 'http://localhost:3000', botId: 'pizza_bot' })
+</script>
+----------->
+
+<script>
+
+window.botpressWebChat.init({
+  host: 'http://localhost:3000',
+  botId: 'advance-bot', //The ID for your bot
+  botName: 'Pizza Bot', // Name of your bot
+  botAvatarUrl: null, // Default avatar URL of the image (e.g., 'https://avatars3.githubusercontent.com/u/1315508?v=4&s=400' )
+  botConvoDescription: 'More optimized pizza bot',
+  backgroundColor: '#A9A9A9', // Color of the background
+  textColorOnBackground: '#666666', // Color of the text on the background
+  foregroundColor: '#0176ff', // Element background color (header, composer, button..)
+  textColorOnForeground: '#ffffff', // Element text color (header, composer, button..)
+  showConversationsButton: true, // Whether or not to show the conversations button
+  showUserName: false, // Whether or not to show the user's name
+  showUserAvatar: true, // Whether or not to show the user's avatar
+  enableTranscriptDownload: false, // Whether or not to show the transcript download button
+  enableArrowNavigation: false, //Whether or to to support arrow navigation (e.g scroll conversation, focus on buttons)
+  externalAuthToken: 'my jwt token', // Defines a token that is sent with each messages to Botpress
+  userId: null, // Allows you to override the default user id. Make sure it is not possible to guess it!
+  enableReset: false, // Whether or not reset button will be shown to the user
+  extraStylesheet: '/assets/modules/channel-web/examples/my-theme.css' // Define a custom style sheet to override Botpress styling
+})
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

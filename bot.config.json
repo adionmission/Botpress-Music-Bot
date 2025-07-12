@@ -1,0 +1,46 @@
+{
+  "locked": false,
+  "disabled": false,
+  "private": false,
+  "details": {},
+  "$schema": "../../bot.config.schema.json",
+  "description": "Empty bot",
+  "active": true,
+  "version": "1.0.0",
+  "author": "Botpress, Inc.",
+  "license": "AGPL-3.0",
+  "imports": {
+    "modules": [],
+    "incomingMiddleware": [],
+    "outgoingMiddleware": [],
+    "contentTypes": [
+      "builtin_action-button",
+      "builtin_card",
+      "builtin_carousel",
+      "builtin_image",
+      "builtin_single-choice",
+      "builtin_text",
+      "dropdown"
+    ]
+  },
+  "dialog": {
+    "timeoutInterval": "5m"
+  },
+  "logs": {
+    "expiration": "1 week"
+  },
+  "defaultLanguage": "en",
+  "languages": [
+    "en"
+  ],
+  "id": "speechbot",
+  "name": "speechbot",
+  "category": null,
+  "pipeline_status": {
+    "current_stage": {
+      "id": "prod",
+      "promoted_on": "2019-07-08T05:46:59.613Z",
+      "promoted_by": "adityakakde100@gmail.com"
+    }
+  }
+}

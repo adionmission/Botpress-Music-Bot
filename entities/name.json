@@ -1,0 +1,17 @@
+{
+  "sensitive": false,
+  "fuzzy": true,
+  "name": "name",
+  "type": "list",
+  "occurences": [
+    {
+      "name": "aditya",
+      "synonyms": [
+        "adi",
+        "adit",
+        "adity",
+        "aaditya"
+      ]
+    }
+  ]
+}

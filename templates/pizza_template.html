@@ -1,0 +1,271 @@
+<!-------
+Copyright (C) 2020  Aditya Kakde
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>.
+---------------->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>PIZZA</title>
+  <meta charset="utf-8">
+  <meta name="ADITYA KAKDE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bot.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://www.embedcurl.com/embedcurl.min.js" async></script>
+<style>
+
+.layer {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 935px;
+}
+.checked {
+  color: red;
+}
+
+</style>
+</head>
+<body>
+
+<div id="mySidenav" class="sidenav w3-border" style="z-index:9999;">
+	<div class="w3-bar w3-blue" style="margin-top:-60px;">
+		<div class="w3-bar-item">
+			<img src="https://steembottracker.com/img/bot_logo.png" class="img-responsive" style="border-radius:100px; width:36px; height:36px; background-color:white; margin-top:7px;">
+		</div>
+		<div class="w3-bar-item">
+			<p style="margin-left:-20px; margin-top:5px;">Master Bot</p>
+			<p style="margin-left:-20px; margin-top:-8px;"><small style="color:white;">Online</small></p>
+		</div>
+		<div class="w3-bar-item" style="height:36px; width:36px; margin-left:140px;">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="color:white; text-decoration:none;">&times;</a>
+		</div>
+	</div>
+	<div class="w3-bar">
+		<div class="w3-bar-item">
+			<img src="https://steembottracker.com/img/bot_logo.png" class="img-responsive w3-border" style="border-radius:100px; width:40px; height:40px; background-color:white; margin-top:50px; margin-left:-2px;">
+		</div>
+		<div class="w3-bar-item">
+			<p class="w3-border w3-padding" style="margin-left:-24px; margin-top:50px; border-radius:5px;">Hello user</p>
+		</div>
+	</div>
+	<div class="w3-bar">
+		<div class="w3-bar-item">
+			<p class="w3-border w3-padding" style="margin-left:45px; margin-top:50px; border-radius:5px; width:250px; margin-top:-8px;">I'm Master Bot and governs all the working of our business and here you will surely find some delicious pizzas</p>
+		</div>
+	</div>
+	<div class="w3-bar">
+		<div class="w3-bar-item">
+			<p class="w3-border w3-padding" style="margin-left:45px; margin-top:50px; border-radius:5px; width:250px; margin-top:-8px;">Please choose any one bot to answer your query</p>
+		</div>
+	</div>
+	<div class="w3-bar">
+		<div class="w3-bar-item">
+			<p class="w3-border w3-padding" style="margin-left:45px; margin-top:50px; border-radius:5px; width:250px; margin-top:-8px; background-color:#f2f2f2;">
+				
+				<a href="http://localhost:3000/s/advanced-pizza-bot"><button type="submit" class="btn btn-primary" id="button1">Order Pizza</button></a>
+				<a href="http://localhost:3000/s/speechbot"><button type="submit" class="btn btn-primary" id="button2">Speech Bot</button></a>
+				
+			</p>
+		</div>
+	</div>
+</div>
+
+<div class="w3-display-container">
+	<span onclick="openNav()"><div class="w3-display-bottomright" style="position:fixed; padding:20px; z-index:1000;"><img src="https://cdn3.f-cdn.com/contestentries/1464599/11468462/5c3a1af1418ff_thumbCard.jpg" class="img-responsive w3-border" style="width:90px; height:90px; color:white; border-radius:50px; box-shadow: 2px 2px rgba(0,0,0,0.5); cursor:pointer;"></div></span>
+</div>
+
+<!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+<div id="main">
+	<div class="jumbotron" style="background-image:url(https://gfconstruction.ca/wp-content/uploads/2019/01/nforno_1-2000x1000.jpg); height:935px;">
+		<div class="layer">
+			<center>
+				<h3 style="color:white; margin-top:400px;">Welcome to</h3>
+				<h1 style="color:white; font-size:100px;"><b>INDIAN PIZZA</b></h1>
+				<br>
+				<button type="button" class="btn btn-default w3-hover-orange" style="padding:20px; width:200px; border-radius:20px; font-size:20px; color:orange; background-color:white; border:2px solid orange; transition:0.6s;">Look Menu</button>
+			</center>
+		</div>
+	</div>
+	<div class="w3-bar" style="background-color:rgba(0,0,0,0); margin-left:710px; z-index:9999;">
+		<div class="w3-bar-item w3-button w3-hover-white" style="padding:40px; transition:0.8s; color:red;"><b>Home</b></div>
+		<div class="w3-bar-item w3-button w3-hover-white" style="padding:40px; transition:0.8s; color:red;"><b>Service</b></div>
+		<div class="w3-bar-item w3-button w3-hover-white" style="padding:40px; transition:0.8s; color:red;"><b>Blog</b></div>
+		<div class="w3-bar-item w3-button w3-hover-white" style="padding:40px; transition:0.8s; color:red;"><b>About</b></div>
+	</div>
+	<div class="container" style="margin-top:100px;">
+		<div class="row">
+		<center>
+			<div class="col-sm-6">
+				<h3 style="margin-top:90px;">Indian Pizza</h3>
+				<h2 style="font-size:60px;"><b><span>W</span> <span>E</span> <span>L</span> <span>C</span> <span>O</span> <span>M</span> <span>E</span></b></h2>
+				<br>
+				<h3 style="width:450px;"><small>Donec quis lorem nulla. Nunc eu odio mi. Morbi nec lobortis est. Sed fringilla, nunc sed imperdiet lacinia, nisl ante egestas mi, ac facilisis ligula sem id neque.</h3>
+			</div>
+			<div class="col-sm-6">
+				<img src="https://img1.cookinglight.timeinc.net/sites/default/files/styles/4_3_horizontal_-_1200x900/public/image/2017/03/main/bahn-mi-pizza-1705p73.jpg" class="img-responsive">
+			</div>
+		</center>
+		</div>
+	</div>
+	<div class="jumbotron" style="margin-top:200px; background-color:#F8F8FF;">
+		<div class="container">
+			<center>
+			<h3 style="margin-left:50px; color:red;">Discover</h3>
+			<h2 style="font-size:60px;"><b><span>I</span> <span>N</span> <span>D</span> <span>I</span> <span>A</span> <span>N</span>&nbsp;&nbsp;&nbsp;<span>P</span> <span>I</span> <span>Z</span> <span>Z</span> <span>A</span></b></h2>
+			</center>
+		</div>
+	</div>
+	<br>
+	<div class="container">
+		<div class="col-sm-4">
+			<img src="https://images1.miaminewtimes.com/imager/u/original/9119420/8-cafe_roval-mnt-clw.jpg" class="img-responsive" style="border-radius:10px;">
+			<br>
+			<h3><b>ROMANTIC RESTAURANT</b></h3>
+			<br>
+			<p style="font-size:16px; color:grey;">Phasellus lorem enim, luctus ut velit eget, con-vallis egestas eros.</p>
+			<br>
+			<button type="button" class="btn btn-default w3-hover-orange" style="background-color:white; color:orange; border:1px solid orange; transition:0.6s;">Learn More <span class="fa fa-arrow-right"></span></button>
+		</div>
+		<div class="col-sm-4">
+			<img src="https://media.timeout.com/images/102802361/image.jpg" class="img-responsive" style="border-radius:10px;">
+			<br>
+			<h3><b>DELICIOUS FOOD</b></h3>
+			<br>
+			<p style="font-size:16px; color:grey;">Phasellus lorem enim, luctus ut velit eget, con-vallis egestas eros.</p>
+			<br>
+			<button type="button" class="btn btn-default w3-hover-orange" style="background-color:white; color:orange; border:1px solid orange; transition:0.6s;">Learn More <span class="fa fa-arrow-right"></span></button>
+		</div>
+		<div class="col-sm-4">
+			<img src="https://1urr83g2z9y25cxaz1jragfe-wpengine.netdna-ssl.com/wp-content/uploads/2017/07/Best-red-wine.jpeg" class="img-responsive" style="border-radius:10px;">
+			<br>
+			<h3><b>RED WINES YOU LOVE</b></h3>
+			<br>
+			<p style="font-size:16px; color:grey;">Phasellus lorem enim, luctus ut velit eget, con-vallis egestas eros.</p>
+			<br>
+			<button type="button" class="btn btn-default w3-hover-orange" style="background-color:white; color:orange; border:1px solid orange; transition:0.6s;">Learn More <span class="fa fa-arrow-right"></span></button>
+		</div>
+	</div>
+	<div class="jumbotron" style="margin-top:200px; background-color:#F8F8FF;">
+		<div class="container">
+			<center>
+			<h3 style="color:red;">Upcomming<h3>
+			<h2 style="font-size:60px;"><b><span>E</span> <span>V</span> <span>E</span> <span>N</span> <span>T</span> <span>S</span></b></h2>
+			<br>
+			<br>
+			<div class="row" style="background-color:white; border-radius:10px;">
+				<div class="col-sm-6">
+					<img src="https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/2O0VXeG/young-people-sitting-around-the-table-and-eating-pizza-on-the-rooftop-terrace_saa57us1l_thumbnail-full01.png" class="img-responsive">
+				</div>
+				<div class="col-sm-6">
+					<h2 style="margin-top:100px;">PIZZA DURING SPECIAL DAYS</h2>
+					<h3 style="width:530px;"><small>Donec quis lorem nulla. Nunc eu odio mi. Morbi nec lobortis est. Sed fringilla, nunc sed imperdiet lacinia, nisl ante egestas mi, ac facilisis ligula sem id neque.</h3>
+				</div>
+			</div>
+			</center>
+		</div>
+	</div>
+	<div class="container" style="margin-top:150px;">
+		<center>
+		<h3 style="color:red;">Cutomer Says</h3>
+		<h2 style="font-size:60px;"><b><span>R</span> <span>E</span> <span>V</span> <span>I</span> <span>E</span> <span>W</span> <span>S</span></b></h2>
+		<br>
+		<br>
+		<h1><span class="glyphicon glyphicon-user" style="border:2px solid red; padding:40px; border-radius:50%;"></h1>
+		<br>
+		<br>
+		<p style="font-size:17px; color:grey;">Donec quis lorem nulla. Nunc eu odio mi. Morbi nec lobortis est. Sed fringilla, nunc sed imperDonec quis lorem nulla. Nunc eu odio mi. Morbi nec lobortis est. Sed fringilla, nunc sed imperdiet lacinia, nisl ante egestas mi, ac facilisis ligula sem id neque.</p>
+		<br>
+		<h4><span class="fa fa-star checked"></span> <span class="fa fa-star checked"></span> <span class="fa fa-star checked"></span> <span class="fa fa-star checked"></span> <span class="fa fa-star checked"></span></h4>
+		<br>
+		<h4><small>Nitin Arora - Assistant Professor (Senior Scale), UPES</small></h4>
+		</center>
+	</div>
+	<div class="jumbotron" style="margin-top:150px; background-color:#323232;">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4">
+					<h4 style="color:white;"><span>C</span> <span>O</span> <span>N</span> <span>T</span> <span>A</span> <span>C</span> <span>T</span> &nbsp;&nbsp; <span>U</span> <span>S</span></h4>
+					<br>
+					<p style="color:#999999; font-size:14px;"><span class="fa fa-map-marker"></span> &nbsp; 8th floor, 379 Hudson St, New York, NY 10018</p>
+					<p style="color:#999999; font-size:14px;"><span class="fa fa-phone"></span> &nbsp; 9983223865</p>
+					<p style="color:#999999; font-size:14px;"><span class="fa fa-envelope"></span> &nbsp; srvmail@gmail.com</p>
+				</div>
+				<div class="col-sm-4">
+					<h4 style="color:white;"><span>O</span> <span>P</span> <span>E</span> <span>N</span> <span>I</span> <span>N</span> <span>G</span> &nbsp;&nbsp; <span>T</span> <span>I</span> <span>M</span> <span>M</span> <span>I</span> <span>N</span> <span>G</span> <span>S</span></h4>
+					<br>
+					<p style="color:#999999; font-size:14px;">9:30 AM - 11:00 PM</p>
+					<p style="color:#999999; font-size:14px;">Every Day</p>
+				</div>
+				<div class="col-sm-4">
+					<h4 style="color:white;"><span>L</span> <span>A</span> <span>T</span> <span>E</span> <span>S</span> <span>T</span> &nbsp;&nbsp; <span>T</span> <span>W</span> <span>I</span> <span>T</span></h4>
+					<br>
+					<p style="color:#999999; font-size:14px;"><span class="fa fa-twitter"></span>&nbsp;<span style="color:red;">@someuser</span></p>
+					<p style="color:#999999; font-size:14px;">Activello is a good option. It has a slider built into that displays the featured image in the slider.</p>
+					<p style="color:red; font-size:14px;">info@gmail.com</p>
+					<br>
+					<p style="color:#666666; font-size:14px;">8 July 2019</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid" style="background-color:black; margin-top:-30px;">
+		<div class="row">
+			<div class="col-sm-4">
+				<h5 style="color:white;">Made with<span class="fa fa-heart" style="color:red; padding:20px;"></span>by Aditya Kakde</h5>
+			</div>
+			<div class="col-sm-4">
+			</div>
+			<div class="col-sm-4 w3-right">
+				<h5 style="color:white; padding:20px;"><span class="fa fa-facebook w3-hover-text-red" style="transition:0.6s;"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="fa fa-twitter w3-hover-text-red" style="transition:0.6s;"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="fa fa-google-plus w3-hover-text-red" style="transition:0.6s;"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="fa fa-linkedin w3-hover-text-red" style="transition:0.6s;"></span></h5>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<script>
+
+/* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
+function openNav() {
+  document.getElementById("mySidenav").style.width = "360px";
+  //document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+/* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  //document.body.style.backgroundColor = "white";
+}
+
+</script>
+
+<script>
+
+window.addEventListener('message', message => {
+  if (message.data.userId) {
+    console.log(`The User ID is ` + message.data.userId)
+  }
+})
+
+</script>
+
+</body>
+</html>

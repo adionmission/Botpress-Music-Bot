@@ -1,0 +1,121 @@
+{
+  "version": "0.0.1",
+  "catchAll": {
+    "next": [
+      {
+        "condition": "event.nlu.intent.name === 'inform_greet'",
+        "node": "CallAPI-fc89ad"
+      },
+      {
+        "condition": "event.nlu.intent.name === 'inform_name'",
+        "node": "CallAPI-eda16c"
+      }
+    ],
+    "onReceive": []
+  },
+  "startNode": "CallAPI-fc89ad",
+  "nodes": [
+    {
+      "id": "skill-fc89ad",
+      "type": "skill-call",
+      "skill": "CallAPI",
+      "name": "CallAPI-fc89ad",
+      "flow": "skills/CallAPI-fc89ad.flow.json",
+      "next": [
+        {
+          "caption": "On success",
+          "condition": "temp.valid",
+          "node": "node-f265"
+        },
+        {
+          "caption": "On failure",
+          "condition": "!temp.valid",
+          "node": "node-1eae"
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "318e281040",
+      "name": "node-f265",
+      "next": [
+        {
+          "condition": "true",
+          "node": "node-a94e"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-77etQo"
+      ],
+      "onReceive": []
+    },
+    {
+      "id": "6cc3e3fd23",
+      "name": "node-1eae",
+      "next": [],
+      "onEnter": [
+        "say #!builtin_text-UsJaSK"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "skill-eda16c",
+      "type": "skill-call",
+      "skill": "CallAPI",
+      "name": "CallAPI-eda16c",
+      "flow": "skills/CallAPI-eda16c.flow.json",
+      "next": [
+        {
+          "caption": "On success",
+          "condition": "temp.valid",
+          "node": "node-a89d"
+        },
+        {
+          "caption": "On failure",
+          "condition": "!temp.valid",
+          "node": "node-ff95"
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "930dd14ff8",
+      "name": "node-a89d",
+      "next": [
+        {
+          "condition": "true",
+          "node": "node-9631"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-77etQo"
+      ],
+      "onReceive": []
+    },
+    {
+      "id": "b54a988e6d",
+      "name": "node-ff95",
+      "next": [],
+      "onEnter": [
+        "say #!builtin_text-UsJaSK"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "6b72cdab74",
+      "name": "node-a94e",
+      "next": [],
+      "onEnter": [],
+      "onReceive": []
+    },
+    {
+      "id": "ee42bd72ef",
+      "name": "node-9631",
+      "next": [],
+      "onEnter": [],
+      "onReceive": []
+    }
+  ]
+}

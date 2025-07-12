@@ -1,0 +1,23 @@
+{
+  "name": "inform_greet",
+  "utterances": [
+    "[howdy](greet)",
+    "[what's up](greet)",
+    "[hey](greet)",
+    "[hello](greet)",
+    "[hi](greet)"
+  ],
+  "slots": [
+    {
+      "id": "QD19u5CkwkJgY3cQPPNRK",
+      "name": "greet",
+      "entities": [
+        "greet"
+      ],
+      "color": 1
+    }
+  ],
+  "contexts": [
+    "global"
+  ]
+}

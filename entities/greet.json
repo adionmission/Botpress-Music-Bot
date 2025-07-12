@@ -1,0 +1,24 @@
+{
+  "sensitive": false,
+  "fuzzy": true,
+  "name": "greet",
+  "type": "list",
+  "occurences": [
+    {
+      "name": "hi",
+      "synonyms": [
+        "hiii",
+        "hhii",
+        "hiiiiiii"
+      ]
+    },
+    {
+      "name": "hello",
+      "synonyms": [
+        "helo",
+        "halo",
+        "hellloo"
+      ]
+    }
+  ]
+}
